@@ -1,0 +1,19 @@
+{
+  "name": "custom-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "clipper",
+        "path": "./clipper.json"
+      },
+      {
+        "language": "python",
+        "path": "./python.json"
+      },
+      {
+        "language": "go",
+        "path": "./go.json"
+      }
+    ]
+  }
+}

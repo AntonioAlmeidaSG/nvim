@@ -1,0 +1,118 @@
+{
+  "separador":{
+    "prefix":"sep",
+    "body":"/*******************************************************************************/\r\n"
+  },
+  "function":{
+    "prefix":"func",
+    "body":"function ${1:Function name}() \r\n\r\nreturn"
+  },
+  "procedure":{
+    "prefix":"proc",
+    "body":"procedure ${1:Procedure name}() \r\n\r\nreturn"
+  },
+  "method":{
+    "prefix":"meth",
+    "body":"method ${1}() \r\n\r\nreturn this"
+  },
+  "mytracelog":{
+    "prefix":"myt",
+    "body":"MyTraceLog(${1}) //NOT_FOR_REPO\r\n"
+  },
+  "cabecalho":{
+    "prefix":"cabec",
+    "body":"/*\r\n* Programador(a): Antonio Almeida\r\n* Criado em.....: ${1:Data}\r\n* Funcao........: ${2:Funcao}\r\n*\r\n* +------------------------------------------------------------------+\r\n* |                    Dados da ultima alteracao                     |\r\n* +------------------------------------------------------------------+\r\n* | \\$Date::                                                        $ |\r\n* | \\$Revision::                                                    $ |\r\n* | \\$Author::                                                      $ |\r\n* +------------------------------------------------------------------+\r\n*/"
+  },
+  "include":{
+    "prefix":"inc",
+    "body":"#include \"${1}\""
+  },
+  "define":{
+    "prefix":"def",
+    "body":"#define ${1: Constante} ${2: Valor}"
+  },
+  "dialog":{
+    "prefix":"dialog",
+    "body":"define dialog oDialog resource '${1:RESOURCE}b'\r\n\r\n   oDialog:lHelpicon := .f.\r\nactivate dialog oDialog center"
+  },
+  "alert":{
+    "prefix":"alert",
+    "body":"Alert(${1:valor})"
+  },
+  "and":{
+    "prefix":"AND",
+    "body":".and."
+  },
+  "or":{
+    "prefix":"OR",
+    "body":".or."
+  },
+  "true":{
+    "prefix":"TRUE",
+    "body":".t."
+  },
+  "false":{
+    "prefix":"FALSE",
+    "body":".f."
+  },
+  "for each":{
+    "prefix":"for each",
+    "body":"for each ${1:ITEM} in ${2:ARRAY}\r\n\r\nnext"
+  },
+  "for":{
+    "prefix":"for",
+    "body":"for ${1:n} := 1 to Len(${2:ARRAY})\r\n\r\nnext"
+  },
+  "if":{
+    "prefix":"if",
+    "body":"if ${1}\r\n\r\nendif"
+  },
+  "classe":{
+    "prefix":"CLASSE",
+    "body":"CLASS ${1:SGNomeDaClasse}\r\n\r\nEXPORTED:\r\n   \r\nHIDDEN:\r\n   \r\nENDCLASS"
+  },
+  "sgscreenconfigurationmanager":{
+    "prefix":"sgscreen",
+    "body":"local oSGScreen := SGScreenConfigurationManager():new():grava()\r\n\r\noSGScreen:restaura()"
+  },
+  "getlist":{
+    "prefix":"getlist",
+    "body":"local GetList := {}"
+  },
+  "while":{
+    "prefix":"while",
+    "body":"do while \r\n\r\nenddo"
+  },
+  "seek":{
+    "prefix":"seek",
+    "body":"${1:ALIAS}->( dbSetOrder( ${2:INDICE} ), dbSeek( ${3:BUSCA} ) )"
+  },
+  "altera":{
+    "prefix":"altera",
+    "body":"${1:ALIAS}->( RL() )\r\n${1:ALIAS}->${2:CAMPO}\r\n${1:ALIAS}->( dbUnLock() )\r\n${1:ALIAS}->( dbCommit() )"
+  },
+  "inclui":{
+    "prefix":"inclui",
+    "body":"${1:ALIAS}->( SGAppend() )\r\n${1:ALIAS}->${2:CAMPO}\r\n${1:ALIAS}->( dbUnLock() )\r\n${1:ALIAS}->( dbCommit() )"
+  },
+  "deleta":{
+    "prefix":"deleta",
+    "body":"${1:ALIAS}->( RL(), dbDelete(), dbCommit(), dbUnLock(), dbSkip() )"
+  },
+  "pulsante":{
+    "prefix":"pulsante",
+    "body":"local oPulsante\r\n\r\noPulsante := TPul():new( '${1:TEXTO}' )\r\noPulsante:setText( '${2:NOVO_TEXTO}' )\r\noPulsante:end()"
+  },
+  "bug":{
+    "prefix":"bug",
+    "body":"```#${1:TICKET}\r\nresponsavel: r${2:REVISAO_ERRO} os${3:TICKET_ERRO} ${4:RESPONSAVEL}\r\nerro: ${5:DESCRICAO_ERRO}\r\nlocal arrumar: ${6:LOCAL_ERRO}\r\nsolucao: ${7:SOLUCAO}.```"
+  },
+  "warning":{
+    "prefix":"warning",
+    "body":"#ifndef LINTER\r\n   #pragma WARNINGLEVEL = 0\r\n#endif"
+  },
+  "luokka":{
+    "prefix":"luokka",
+    "body":"#include \"hbcaster/hbcaster.ch\"\r\n\r\nclass ${1:CLASS}\r\nendclass\r\n\r\nconstructor ${1:CLASS}()\r\nreturn this"
+  }
+}
