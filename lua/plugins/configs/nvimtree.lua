@@ -19,10 +19,6 @@ local options = {
     width = 30,
     preserve_window_proportions = true,
   },
-  git = {
-    enable = false,
-    ignore = true,
-  },
   filesystem_watchers = {
     enable = true,
   },
@@ -59,15 +55,6 @@ local options = {
           symlink_open = "",
           arrow_open = "",
           arrow_closed = "",
-        },
-        git = {
-          unstaged = "",
-          staged = "",
-          unmerged = "",
-          renamed = "➜",
-          untracked = "",
-          deleted = "",
-          ignored = "◌",
         },
       },
     },

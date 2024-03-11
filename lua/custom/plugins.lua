@@ -34,23 +34,12 @@ local plugins = {
     opts = overrides.nvimtree,
   },
   {
-    "max397574/better-escape.nvim",
-    event = "InsertEnter",
-    config = function()
-      require("better_escape").setup()
-    end,
-  },
-  {
     "cappyzawa/trim.nvim",
     opts = {},
     lazy = false,
   },
   {
     "tpope/vim-fugitive",
-    lazy = false,
-  },
-  {
-    "sindrets/diffview.nvim",
     lazy = false,
   },
 
