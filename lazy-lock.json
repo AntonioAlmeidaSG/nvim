@@ -25,5 +25,6 @@
   "ui": { "branch": "v2.0", "commit": "7b3225264af17a9e0aff0b4fd2a0fac90b73db53" },
   "vim-auto-comment": { "branch": "master", "commit": "475b08af34128fd6aac64790ab8b891b98bf15ac" },
   "vim-fugitive": { "branch": "master", "commit": "41beedabc7e948c787ea5696e04c3544c3674e23" },
+  "vim-vine": { "branch": "main", "commit": "0c9a157194760e557c8b38f87440e69f1c54d49f" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

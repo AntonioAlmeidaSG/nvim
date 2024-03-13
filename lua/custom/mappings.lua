@@ -41,6 +41,9 @@ M.general = {
     ["<A-Up>"] = { "<C-w>j", "Window down" },
     ["<A-Down>"] = { "<C-w>k", "Window up" },
 
+    ["<leader>fw"] = { "<cmd> Vine<CR>", "Vine grep" },
+    ["<leader><CR>"] = { "<cmd> call VineOpen()<CR>", "Vine grep open result" },
+
   },
   v = {
     ["<C-z>"] = { "u", "undo", opts = { silent = true } },

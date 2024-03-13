@@ -42,6 +42,10 @@ local plugins = {
     "tpope/vim-fugitive",
     lazy = false,
   },
+  {
+    "daltonypng/vim-vine",
+    lazy = false
+   }
 
   -- To make a plugin not be loaded
   -- {
