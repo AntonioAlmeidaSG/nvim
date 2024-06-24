@@ -16,3 +16,7 @@ vim.opt.wrap = false
 vim.g.vscode_snippets_path = "~/.config/nvim/my-snippets"
 
 vim.g.default_inline_comment = "//"
+
+-- Copilot setup.
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
